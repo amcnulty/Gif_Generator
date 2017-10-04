@@ -1,0 +1,9 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#buttonSection {
+    color: red;
+    font-size: 6em;
+}
