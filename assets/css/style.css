@@ -1,21 +1,100 @@
 html, body {
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #15120b;
 }
 
 #buttonSection {
-    color: red;
-    font-size: 6em;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #9bc19c;
+    border-bottom: 2px solid #15120b;
+}
+
+.topicButton {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px;
+    margin: 3px;
+    color: #a02a06;
+    outline: none;
+    border: 3px solid #a02a06;
+    background-color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.topicButton:hover {
+    color: white;
+    background-color: #a02a06;
+}
+
+#buttonSection:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+#addButtonForm {
+    width: 100%;
+    color: #9bc19c;
+    text-align: center;
+    background-color: #15120b;
+    padding: 20px 0px 20px 0px;
+}
+
+#topicInput {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 8px 0px 6px;
+    background-color: transparent;
+    outline: none;
+    color: #9bc19c;
+    border: none;
+    border-bottom: 2px solid #9bc19c;
+    transition: all .3s ease;
+}
+
+#topicInput:focus {
+    border-bottom-color: #a02a06;
+}
+
+#topicButton {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 8px;
+    margin: 3px;
+    color: #9bc19c;
+    outline: none;
+    border: 3px solid #9bc19c;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+#topicButton:hover {
+    color: #15120b;
+    background-color: #9bc19c;
+}
+
+#gifSection {
+    text-align: center;
 }
 
 .gifWrapper {
-    
+    display: inline-block;
+    background-color: #9bc19c;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.gifWrapper:hover {
+    background-color: #7DA37E;
 }
 
 .gifImage {
-
-}
-
-.ratingCaption {
-
+    cursor: pointer;
 }

@@ -9,15 +9,22 @@ function load() {
         $addSportButton: $("#topicButton"),
         $gifSection: $("#gifSection"),
         createTopicsButtons: function() {
+            generator.clearTopicsButtons();
             for (var i = 0; i < generator.topics.length; i++) {
                 generator.createButton(generator.topics[i]);
             }
+        },
+        clearTopicsButtons: function() {
+            generator.$buttonSection.empty();
         },
         createButton: function(topic) {
             var $newButton = $("<button>");
             $newButton.attr("class", "topicButton");
             $newButton.text(topic);
             generator.$buttonSection.append($newButton);
+        },
+        addTopic: function(topic) {
+            generator.topics.push(topic);
         },
         requestGifs: function(topic) {
             var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=fOviTj7Gk4umzgqDN2LQyW51gu02PC28&limit=10";
@@ -67,7 +74,9 @@ function load() {
     });
     generator.$addSportButton.on("click", function(e) {
         e.preventDefault();
-        generator.createButton(generator.$addSportInput.val());
+        // generator.createButton(generator.$addSportInput.val());
+        generator.addTopic(generator.$addSportInput.val());
+        generator.createTopicsButtons();
     });
     $(document).on("click", ".gifImage", function() {
         generator.toggleGifAnimation($(this));
