@@ -98,3 +98,19 @@ html, body {
 .gifImage {
     cursor: pointer;
 }
+
+@media screen and (max-width: 1279px) {
+    .topicButton:hover {
+        color: #a02a06;
+        background-color: white;
+    }
+
+    #topicButton:hover {
+        color: unset;
+        background-color: unset;
+    }
+
+    .gifWrapper:hover {
+        background-color: unset;
+    }
+}
