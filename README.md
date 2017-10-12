@@ -20,9 +20,6 @@ This game makes use of the Giphy API to generate gifs. This is a free api and I 
 5. Display the rating of the gif under each image.
 6. Allow users to create their own topics with a form on the page.
 
-## Due date
-Saturday, October 7<sup>th</sup> 2017 9:00 AM
-
 ## Links
 * [Gif Generator Link](https://amcnulty.github.io/Gif_Generator/ "An interactive gif generator!")
 * [Giphy API](https://github.com/Giphy/GiphyAPI "Repository for the Giphy API")
